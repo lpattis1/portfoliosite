@@ -1,0 +1,91 @@
+// navbar
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .navbar {
+        margin-top: 5rem;
+        font-family: 'Open Sans', sans-serif;
+
+        .container {
+            
+            .navbar__logo {
+                margin-left: 2rem;
+            }
+
+            .links .navbar__links  {
+                display: none;
+
+               }
+
+            .links .menu {
+                padding-right: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .header {
+        margin-top: 4vh;
+        height: 70vh;
+        z-index: 100;
+    
+        &__container {
+           @include containerFlex;
+            margin: auto;
+
+            .text {
+    
+                .text__heading {
+                    font-size: 4rem;
+                    font-weight: 700;
+                    text-align: center;
+                    text-transform: uppercase;
+                    @include glow-bg;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-family: 'Poppins', sans-serif;
+                    letter-spacing: 1rem;
+                    margin-top: 2rem;
+        
+                }
+        
+                &__subheading {
+                    font-size: 2rem;
+                    font-weight: 400;
+                    margin-bottom: 2rem;
+                    text-align: center;
+                }
+        
+                &__info {
+                    font-size: 2rem;
+                    text-align: center;
+                    font-weight: 300;
+                    width: 90%;
+                    margin: auto;
+                    line-height: 1.9;
+                    color: rgb(82, 82, 82);
+                }
+            }
+        
+            img {
+                height: 10rem;
+                margin-bottom: 4rem;
+                margin: auto;
+            }
+        
+            .hand-bg {
+                position: relative;
+                
+        
+                .hands {
+                    height: 10rem;
+                    position: absolute;
+                    left: -48rem;
+                    top: 18rem;
+                    height: 22rem;
+                }
+            }
+        }
+    
+    }
+}

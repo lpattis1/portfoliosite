@@ -1,0 +1,17 @@
+// animations
+@import "animations/animations";
+
+// base
+@import "base/base";
+@import "base/components";
+@import "base/mixins";
+
+// layout
+@import "layout/body";
+@import "layout/footer";
+@import "layout/navbar";
+@import "layout/portfolio";
+
+// media queries
+@import "mediaqueries/mobile";
+@import "mediaqueries/ipad";

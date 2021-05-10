@@ -1,0 +1,12 @@
+@mixin containerFlex {
+    max-width: 180rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin glow-bg {
+    background: rgb(242,92,120);
+    background: linear-gradient(276deg, rgba(242,92,120,1) 4%, rgba(242,125,82,1) 62%, rgba(242,107,94,1) 100%);
+}
