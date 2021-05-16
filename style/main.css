@@ -317,6 +317,16 @@ li {
   top: -35rem;
 }
 
+.nav-menu {
+  background: #F27D52;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 300;
+}
+
 .navbar {
   margin-top: 13rem;
   font-family: "Open Sans", sans-serif;
@@ -472,10 +482,15 @@ li {
 .socials-modal .socials-container .socials-text .links {
   margin-bottom: 1rem;
 }
-.socials-modal .socials-container .socials-text .links a {
+.socials-modal .socials-container .socials-text .links .social-link {
   font-size: 4rem;
   margin-right: 1rem;
   color: #F26B5E;
+}
+.socials-modal .socials-container .socials-text .links .social-link:hover {
+  transform: scale(1.5);
+  transition: 0.2s ease-in;
+  color: #F2388F;
 }
 .socials-modal .socials-container .socials-text .social-exit .no-thanks {
   color: black;
@@ -484,6 +499,10 @@ li {
   font-family: "Open Sans", sans-serif;
   text-decoration-color: #F26B5E;
   text-decoration-thickness: 0.2em;
+}
+.socials-modal .socials-container .socials-text .social-exit .no-thanks:hover {
+  transition: 0.2s ease-in;
+  text-decoration-color: #F2388F;
 }
 .socials-modal .socials-container .socials-img {
   background: #F26B5E;

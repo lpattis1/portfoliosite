@@ -75,10 +75,16 @@
       .links {
         margin-bottom: 1rem;
 
-        a {
+        .social-link {
           font-size: 4rem;
           margin-right: 1rem;
           color: $gradient4;
+        }
+
+        .social-link:hover {
+            transform: scale(1.5);
+            transition: 0.2s ease-in;
+            color: $gradient2;
         }
       }
 
@@ -90,6 +96,11 @@
           font-family: "Open Sans", sans-serif;
           text-decoration-color: $gradient4;
           text-decoration-thickness: 0.2em;
+        }
+
+        .no-thanks:hover {
+            transition: 0.2s ease-in;
+            text-decoration-color: $gradient2;
         }
       }
     }
