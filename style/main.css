@@ -258,6 +258,74 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
 /* global styles */
 * {
   margin: 0;
@@ -288,6 +356,7 @@ li {
   z-index: 100;
   -webkit-animation: fade-in 3.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 3.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-delay: 2.5s;
 }
 .header__container {
   max-width: 180rem;
@@ -457,10 +526,17 @@ li {
   height: 100vh;
   background: #F27D52;
   z-index: 1000;
+  visibility: hidden;
+  transition: 0.2s ease-in;
+}
+.loading .loading-gif {
+  height: 35rem;
 }
 .loading .loading-text {
   color: white;
   font-size: 4rem;
+  -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
+  animation: heartbeat 2.5s ease-in-out infinite both;
 }
 .loading .loading-bar {
   width: 30rem;
@@ -468,9 +544,15 @@ li {
   border: 0.2rem solid white;
   margin-top: 2rem;
 }
+.loading .loading-bar .load {
+  background: #F25C78;
+  height: 100%;
+  width: 0%;
+  transition: 0.2s ease-in;
+}
 
-.hide-content {
-  display: none;
+.show-loading-screen {
+  visibility: visible;
 }
 
 .navbar {
@@ -496,12 +578,13 @@ li {
   margin-right: 1.5rem;
   -webkit-animation: roll-in-left 1.8s ease-out both;
   animation: roll-in-left 1.8s ease-out both;
-  animation-delay: 0.2s;
+  animation-delay: 2.5s;
 }
 .navbar__logo h3 {
   color: black;
   -webkit-animation: bounce-in-top 1.1s both;
   animation: bounce-in-top 1.1s both;
+  animation-delay: 2.5s;
 }
 .navbar .links {
   display: flex;
@@ -517,6 +600,7 @@ li {
   color: black;
   -webkit-animation: bounce-in-top 1.1s forwards;
   animation: bounce-in-top 1.1s forwards;
+  animation-delay: 2.5s;
 }
 .navbar__links {
   display: flex;
@@ -529,6 +613,7 @@ li {
   position: relative;
   -webkit-animation: bounce-in-top 1.1s forwards;
   animation: bounce-in-top 1.1s forwards;
+  animation-delay: 2.5s;
   cursor: pointer;
 }
 .navbar__links li, .navbar__links a {

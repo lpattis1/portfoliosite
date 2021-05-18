@@ -10,20 +10,36 @@
   height: 100vh;
   background: $gradient3;
   z-index: 1000;
+  visibility: hidden;
+  transition: 0.2s ease-in;
+
+  .loading-gif {
+      height: 35rem;
+  }
 
   .loading-text {
-      color: white;
-      font-size: 4rem;
+    color: white;
+    font-size: 4rem;
+    -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
+    animation: heartbeat 2.5s ease-in-out infinite both;
   }
 
   .loading-bar {
-      width: 30rem;
-      height: 3rem;
-      border: .2rem solid white;
-      margin-top: 2rem;
+    width: 30rem;
+    height: 3rem;
+    border: 0.2rem solid white;
+    margin-top: 2rem;
+
+    .load {
+        background: $gradient1;
+        height: 100%;
+        width: 0%;
+        transition: 0.2s ease-in;
+    }
   }
 }
 
-.hide-content {
-    display: none;
+
+.show-loading-screen {
+  visibility: visible;
 }
