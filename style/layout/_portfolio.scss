@@ -116,23 +116,18 @@
         display: none;
 
         h3 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+          font-size: 3rem;
+          margin-bottom: 1rem;
         }
 
         .project-info {
-            font-size: 1.5rem;
-            width: 80%;
-            text-align: center;
-            margin-bottom: 2rem;
+          font-size: 1.5rem;
+          width: 80%;
+          text-align: center;
+          margin-bottom: 2rem;
         }
 
         .project-icons {
-            
-            img {
-                height: 3.6rem;
-                margin-right: 1rem;
-            }
         }
       }
     }
@@ -158,55 +153,78 @@
   height: 80vh !important;
 }
 
-
-
 .bg-dark {
-    background: rgba(0, 0, 0, 0.363);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  background: rgba(0, 0, 0, 0.363);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.featured:hover{
-    transform: scale(1.1);
-    transition: 0.2s ease-in;
+.featured:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
 }
 
 .project-description-show {
-    height: 20vh;
-        width: 100%;
-        padding: 3rem;
-        background: white;
-        -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.3s ease-in;
+  height: 23vh;
+  width: 100%;
+  padding: 3rem;
+  background: white;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
 
-        h3 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 
-        .project-info {
-            font-size: 1.5rem;
-            width: 80%;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
+  .project-info {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 
-        .project-icons {
-            
-            img {
-                height: 3.6rem;
-                margin-right: 1rem;
-            }
-        }
+  .project-icons {
+    .live-demo {
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+      border: none;
+      margin-right: 1.4rem;
+      border-radius: 0.5rem;
+      background: $gradient1;
+      font-weight: 600;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .live-demo:hover {
+      transition: 0.2s ease-in-out;
+      background: #e45670;
+    }
+
+    .github-code {
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+      border: none;
+      margin-right: 1.4rem;
+      border-radius: 0.5rem;
+      background: $gradient2;
+      font-weight: 600;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    .github-code:hover {
+      transition: 0.2s ease-in-out;
+      background: #dd3483;
+    }
+  }
 }
-

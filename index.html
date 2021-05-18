@@ -27,6 +27,12 @@
     <link rel="stylesheet" href="/style/main.css" />
   </head>
   <body>
+    <!-- loading page -->
+    <div class="loading">
+      <img src="https://i.gifer.com/4hso.gif" alt="" class="loading-gif">
+      <h2 class="loading-text">Loading...</h2>
+      <div class="loading-bar"></div>
+    </div>
     <!-- navigation -->
     <nav class="navbar">
       <div class="container">
@@ -43,48 +49,69 @@
           </div>
 
           <div class="hamburger-menu">
-            <a class="menu" href="about.html"><i class="fas fa-bars"></i></a>
+            <a class="before-menu" href="#"><i class="fas fa-bars"></i></a>
           </div>
 
           <div class="nav-menu">
+            <div class="nav-menu-logo">
+              <img src="/img/3d-cube-menu.svg" alt="" />
+              <h3>LP</h3>
+            </div>
             <div class="close-nav-menu">
               <span class="close-out">Close</span>
+              <i class="fas fa-times"></i>
             </div>
             <ul class="menu">
-              <li>
+              <li id="home" class="m-list-item">
                 <span class="hover-state"
                   ><i class="fas fa-long-arrow-alt-right"></i></span
                 ><a href="#" class="menu-link">Home</a>
               </li>
-              <li>
+              <li id="about" class="m-list-item">
                 <span class="hover-state"
                   ><i class="fas fa-long-arrow-alt-right"></i></span
                 ><a href="#" class="menu-link">About</a>
               </li>
-              <li>
+              <li id="resume" class="m-list-item">
                 <span class="hover-state"
                   ><i class="fas fa-long-arrow-alt-right"></i></span
                 ><a href="#" class="menu-link">Resume</a>
               </li>
-              <li>
+              <li id="contact" class="m-list-item">
                 <span class="hover-state"
                   ><i class="fas fa-long-arrow-alt-right"></i></span
                 ><a href="#" class="menu-link">Contact</a>
               </li>
-              <li>
+              <li id="portfolio" class="m-list-item">
                 <span class="hover-state"
-                  ><i class="fas fa-long-arrow-alt-right"></i></span
-                >
+                  ><i class="fas fa-long-arrow-alt-right"></i
+                ></span>
                 <a href="#" class="menu-link menu-link-mobile">Portfolio</a>
               </li>
             </ul>
+            <div class="socials">
+              <a href="#" class="menu-linkedin"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="menu-github"
+                ><i class="fab fa-github-square"></i
+              ></a>
+              <a href="#" class="menu-behance"
+                ><i class="fab fa-behance-square"></i
+              ></a>
+            </div>
+            <div class="copyright">
+              <span class="copy-one">Copyright</span>
+              <span class="middle-dot">•</span>
+              <span class="name">Lauren Pattison</span>
+            </div>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- header -->
-    <header class="header">
+    <header data-section="home" class="header">
       <div class="header__container">
         <!-- header text -->
         <section class="text">
@@ -149,9 +176,8 @@
                     eos temporibus ipsa, delectus numquam.
                   </p>
                   <div class="project-icons">
-                    <img src="/img/html.svg" alt="" />
-                    <img src="/img/css.svg" alt="" />
-                    <img src="/img/javascript.svg" alt="" />
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
                   </div>
                 </div>
               </div>
@@ -168,9 +194,8 @@
                     eos temporibus ipsa, delectus numquam.
                   </p>
                   <div class="project-icons">
-                    <img src="/img/html.svg" alt="" />
-                    <img src="/img/css.svg" alt="" />
-                    <img src="/img/javascript.svg" alt="" />
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
                   </div>
                 </div>
               </div>
@@ -187,9 +212,8 @@
                     eos temporibus ipsa, delectus numquam.
                   </p>
                   <div class="project-icons">
-                    <img src="/img/html.svg" alt="" />
-                    <img src="/img/css.svg" alt="" />
-                    <img src="/img/javascript.svg" alt="" />
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
                   </div>
                 </div>
               </div>
@@ -208,9 +232,8 @@
                     eos temporibus ipsa, delectus numquam.
                   </p>
                   <div class="project-icons">
-                    <img src="/img/html.svg" alt="" />
-                    <img src="/img/css.svg" alt="" />
-                    <img src="/img/javascript.svg" alt="" />
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
                   </div>
                 </div>
               </div>
@@ -227,9 +250,8 @@
                     eos temporibus ipsa, delectus numquam.
                   </p>
                   <div class="project-icons">
-                    <img src="/img/html.svg" alt="" />
-                    <img src="/img/css.svg" alt="" />
-                    <img src="/img/javascript.svg" alt="" />
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
                   </div>
                 </div>
               </div>
@@ -246,9 +268,8 @@
                     eos temporibus ipsa, delectus numquam.
                   </p>
                   <div class="project-icons">
-                    <img src="/img/html.svg" alt="" />
-                    <img src="/img/css.svg" alt="" />
-                    <img src="/img/javascript.svg" alt="" />
+                    <button class="live-demo">Live Demo</button>
+                    <button class="github-code">Github</button>
                   </div>
                 </div>
               </div>
@@ -302,7 +323,14 @@
       </div>
     </section>
 
+    <section class="techs-featured">
+      <div class="container">
+        hfd
+      </div>
+    </section>
+
     <script src="/javascript/main.js"></script>
     <script src="/javascript/popup.js"></script>
+    <script src="/javascript/loading.js"></script>
   </body>
 </html>

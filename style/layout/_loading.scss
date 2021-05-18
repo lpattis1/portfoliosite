@@ -1,0 +1,29 @@
+.loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: $gradient3;
+  z-index: 1000;
+
+  .loading-text {
+      color: white;
+      font-size: 4rem;
+  }
+
+  .loading-bar {
+      width: 30rem;
+      height: 3rem;
+      border: .2rem solid white;
+      margin-top: 2rem;
+  }
+}
+
+.hide-content {
+    display: none;
+}

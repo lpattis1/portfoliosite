@@ -1,3 +1,45 @@
+// Hamburger menu
+
+const hamburgerMenu = document.querySelector(".before-menu");
+const navMenu = document.querySelector(".nav-menu");
+const closeNavMenu = document.querySelector(".close-nav-menu");
+const navMenuLinks = document.querySelectorAll(".m-list-item");
+const hoverState = document.querySelectorAll("hover-state");
+
+function openHamburgerMenu() {
+  hamburgerMenu.addEventListener("click", function (e) {
+    navMenu.classList.add("nav-menu--show");
+  });
+}
+
+function closeHamburgerMenu() {
+  closeNavMenu.addEventListener("click", function (e) {
+    navMenu.classList.remove("nav-menu--show");
+  });
+}
+
+function linksShowHoverState() {
+  navMenuLinks.forEach((link) => {
+    link.addEventListener("mouseenter", function (e) {
+      e.preventDefault();
+      link.children[0].classList.add("hover-state--show");
+    });
+
+    link.addEventListener("mouseleave", function (e) {
+      e.preventDefault();
+      link.children[0].classList.remove("hover-state--show");
+    });
+  });
+}
+
+openHamburgerMenu();
+closeHamburgerMenu();
+linksShowHoverState();
+
+// -----------------------------------------------
+
+// Projects
+
 const featuredProjects = document.querySelectorAll(".featured");
 const filterProjects = document.querySelectorAll(".project");
 const portfolioContainer = document.querySelector(".portfolio");
@@ -90,3 +132,5 @@ function showProjectDescription() {
 sortProjects();
 darkenBg();
 showProjectDescription();
+
+// -----------------------------------------------

@@ -29,7 +29,7 @@
     width: 100%;
 
     position: relative;
-    top: 15%;
+    top: 20%;
     left: 0;
     overflow: hidden;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@
       padding: 3rem;
 
       .socials-logo {
-        margin-bottom: 6rem;
+        margin-bottom: 4.5rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -60,20 +60,20 @@
       .socials-info {
         h2 {
           font-size: 4rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
 
         .my-info {
           font-size: 1.7rem;
           line-height: 1.9;
           color: rgb(82, 82, 82);
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
           width: 90%;
         }
       }
 
       .links {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 
         .social-link {
           font-size: 4rem;
