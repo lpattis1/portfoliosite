@@ -5,7 +5,7 @@ let width = 0;
 
 function fillBar() {
   let interval = setInterval(() => {
-    if (width >= 164) {
+    if (width >= 169) {
       width = 0;
       loadingBar.style.visibility = "hidden";
     } else {
@@ -18,11 +18,12 @@ function fillBar() {
 function showLoadingScreen() {
   setInterval(() => {
     loadingPage.classList.remove("show-loading-screen");
+    loadingBar.style.visibility = "hidden";
     loadingPage.animate([{ opacity: "1" }, { opacity: "0" }], {
       duration: 1000,
       fill: "backwards",
+      delay: "0.1s",
     });
-    loadingBar.style.visibility = "hidden";
     playLoadingScreenOnce();
   }, 2500);
 }
