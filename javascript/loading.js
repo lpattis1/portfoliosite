@@ -1,6 +1,7 @@
 const loadingPage = document.querySelector(".loading");
 const header = document.querySelector(".header");
 const loadingBar = document.querySelector(".load");
+const portfolioHide = document.querySelector(".portfolio");
 let width = 0;
 
 function fillBar() {
@@ -15,6 +16,8 @@ function fillBar() {
   }, 15);
 }
 
+portfolioHide.style.display = "none";
+
 function showLoadingScreen() {
   setInterval(() => {
     loadingPage.classList.remove("show-loading-screen");
@@ -27,6 +30,10 @@ function showLoadingScreen() {
     playLoadingScreenOnce();
   }, 2500);
 }
+
+setInterval(() => {
+  portfolioHide.style.display = "flex";
+}, 3000);
 
 showLoadingScreen();
 fillBar();
