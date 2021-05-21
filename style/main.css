@@ -950,8 +950,8 @@ li {
   .navbar .container .links .navbar__links {
     display: none;
   }
-  .navbar .container .links .menu {
-    padding-right: 2rem;
+  .navbar .container .links .hamburger-menu {
+    margin-right: 2rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1008,6 +1008,127 @@ li {
     position: absolute;
     left: -23rem;
     top: 18rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .portfolio {
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    height: 110vh;
+    background-image: linear-gradient(to right bottom, rgba(242, 125, 82, 0.699), rgba(242, 106, 94, 0.801));
+    transition: 0.7s ease-in;
+  }
+  .portfolio .container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  .portfolio .container .project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .portfolio .container .project-text .portfolio-text-left .text-destination {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 1rem;
+  }
+  .portfolio .container .project-text .portfolio-text-left .text-destination .divider {
+    background: #F2388F;
+    margin-right: 0.5rem;
+    padding: 0rem 0.2rem;
+    display: none;
+  }
+  .portfolio .container .project-text .portfolio-text-left .featured-text {
+    font-size: 2.6rem;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+  }
+  .portfolio .container .project-text .portfolio-text-right .filter-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio .container .project-text .portfolio-text-right .filter-projects .project {
+    margin-right: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .portfolio .container .project-text .portfolio-text-right .filter-projects .project:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+  }
+  .portfolio .container .project-text .portfolio-text-right .filter-projects .active-project {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #F2388F;
+    text-decoration-thickness: 0.2em;
+  }
+  .portfolio .container .portfolio-projects {
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+  .portfolio .container .portfolio-projects .row-one {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 7rem;
+  }
+  .portfolio .container .portfolio-projects .row-two {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio .container .portfolio-projects .featured {
+    height: 50rem;
+    width: 100%;
+    background: inherit;
+    background: url(https://danielkorpai.com/dist/img/dribbble/landing-page-template.png);
+    margin-right: 4rem;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .portfolio .container .portfolio-projects .featured .project-description {
+    height: 30vh;
+    width: 100%;
+    padding: 4rem;
+    background: white;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  .portfolio .container .portfolio-projects .featured .project-description h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .portfolio .container .portfolio-projects .featured .project-description .project-info {
+    font-size: 1.5rem;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .portfolio .container .portfolio-projects .featured1 {
+    background: url(/bgslide/3.png);
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
