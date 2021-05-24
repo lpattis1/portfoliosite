@@ -748,6 +748,38 @@ li {
   opacity: 1;
 }
 
+.show-project {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.603);
+  transition: all 0.4s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.project-preview {
+  display: flex;
+  max-width: 100rem;
+  margin: auto;
+  width: 100%;
+  height: 60%;
+  position: relative;
+  top: 20%;
+  left: 0;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  z-index: 5000;
+}
+
+.show-project-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 .portfolio {
   margin-top: 8vh;
   margin-bottom: 8vh;
@@ -856,8 +888,23 @@ li {
   text-align: center;
   margin-bottom: 2rem;
 }
-.portfolio .portfolio-projects .featured1 {
-  background: url(/bgslide/3.png);
+.portfolio .portfolio-projects .featured-one {
+  background: url(https://danielkorpai.com/dist/img/dribbble/landing-page-template.png);
+}
+.portfolio .portfolio-projects .featured-two {
+  background: url(https://blog.uxfol.io/wp-content/uploads/2020/01/ux-portfolio-examples-1024x768.png);
+}
+.portfolio .portfolio-projects .featured-three {
+  background: url(https://i.pinimg.com/originals/8a/c1/68/8ac168fc4a80fbcb60a51151becaf8e2.png);
+}
+.portfolio .portfolio-projects .featured-four {
+  background: url(https://blog.uxfol.io/wp-content/uploads/2020/03/ux-portfolio-example.leslie.png);
+}
+.portfolio .portfolio-projects .featured-five {
+  background: url(https://blog.uxfol.io/wp-content/uploads/2020/02/ux-portfolio-example-parth-desai.png);
+}
+.portfolio .portfolio-projects .featured6 {
+  background: url(https://blog.uxfol.io/wp-content/uploads/2020/02/valeire-lee-portfolio.png);
 }
 
 .hidden {

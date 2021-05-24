@@ -22,12 +22,6 @@ function showLoadingScreen() {
   setInterval(() => {
     loadingPage.classList.remove("show-loading-screen");
     loadingBar.style.visibility = "hidden";
-    loadingPage.animate([{ opacity: "1" }, { opacity: "0" }], {
-      duration: 1000,
-      fill: "backwards",
-      delay: "0.1s",
-    });
-    playLoadingScreenOnce();
   }, 2500);
 }
 
