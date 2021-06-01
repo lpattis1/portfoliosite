@@ -889,22 +889,22 @@ li {
   margin-bottom: 2rem;
 }
 .portfolio .portfolio-projects .featured-one {
-  background: url(https://danielkorpai.com/dist/img/dribbble/landing-page-template.png);
+  background: url(/img/featured-one.png);
 }
 .portfolio .portfolio-projects .featured-two {
-  background: url(https://blog.uxfol.io/wp-content/uploads/2020/01/ux-portfolio-examples-1024x768.png);
+  background: url(/img/featured-two.png);
 }
 .portfolio .portfolio-projects .featured-three {
-  background: url(https://i.pinimg.com/originals/8a/c1/68/8ac168fc4a80fbcb60a51151becaf8e2.png);
+  background: url(/img/featured-three.png);
 }
 .portfolio .portfolio-projects .featured-four {
-  background: url(https://blog.uxfol.io/wp-content/uploads/2020/03/ux-portfolio-example.leslie.png);
+  background: url(/img/featured-four.png);
 }
 .portfolio .portfolio-projects .featured-five {
-  background: url(https://blog.uxfol.io/wp-content/uploads/2020/02/ux-portfolio-example-parth-desai.png);
+  background: url(/img/featured-five.png);
 }
-.portfolio .portfolio-projects .featured6 {
-  background: url(https://blog.uxfol.io/wp-content/uploads/2020/02/valeire-lee-portfolio.png);
+.portfolio .portfolio-projects .featured-six {
+  background: url(/img/featured-six.png);
 }
 
 .hidden {

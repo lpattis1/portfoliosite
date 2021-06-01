@@ -27,29 +27,3 @@ exitBtn.addEventListener("click", function (e) {
 });
 
 loadModal();
-
-// ----------------------------------------
-
-const portfolioProjects = document.querySelectorAll(".featured");
-const portfolioProjectPopup = document.querySelector(".show-project");
-const portfolioProjectPreview = document.querySelector(".show-project-image");
-
-function openFeaturedProject() {
-  portfolioProjects.forEach((project) => {
-    project.addEventListener("click", function (e) {
-      let projectNum = project.dataset.project;
-      console.log(projectNum);
-      portfolioProjectPopup.classList.add("show-project-visible");
-
-      portfolioProjectPreview.src = `/img/${projectNum}.png`;
-    });
-
-    portfolioProjectPopup.addEventListener("click", function (e) {
-      if (e.target === portfolioProjectPopup) {
-        portfolioProjectPopup.classList.remove("show-project-visible");
-      }
-    });
-  });
-}
-
-openFeaturedProject();
