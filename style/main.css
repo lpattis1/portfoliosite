@@ -535,8 +535,6 @@ li {
 .loading .loading-text {
   color: white;
   font-size: 4rem;
-  -webkit-animation: heartbeat 2.5s ease-in-out infinite both;
-  animation: heartbeat 2.5s ease-in-out infinite both;
 }
 .loading .loading-bar {
   width: 30rem;
@@ -1059,9 +1057,9 @@ li {
 }
 @media only screen and (max-width: 600px) {
   .portfolio {
-    margin-top: 8vh;
+    margin-top: 5vh;
     margin-bottom: 8vh;
-    height: 110vh;
+    height: 350vh;
     background-image: linear-gradient(to right bottom, rgba(242, 125, 82, 0.699), rgba(242, 106, 94, 0.801));
     transition: 0.7s ease-in;
   }
@@ -1104,6 +1102,9 @@ li {
     align-items: center;
     justify-content: center;
   }
+  .portfolio .container .project-text .portfolio-text-right .filter-projects .filter-projects {
+    display: none;
+  }
   .portfolio .container .project-text .portfolio-text-right .filter-projects .project {
     margin-right: 2rem;
     font-size: 1.4rem;
@@ -1112,6 +1113,7 @@ li {
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
+    display: none;
   }
   .portfolio .container .project-text .portfolio-text-right .filter-projects .project:hover {
     transform: scale(1.2);
@@ -1131,17 +1133,40 @@ li {
   .portfolio .container .portfolio-projects .row-one {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
+  }
+  .portfolio .container .portfolio-projects .row-one .featured-one {
+    background: url(/img/featured-one.png);
+    background-position: center;
+  }
+  .portfolio .container .portfolio-projects .row-one .featured-two {
+    background: url(/img/featured-two.png);
+    background-position: center;
+  }
+  .portfolio .container .portfolio-projects .row-one .featured-three {
+    background: url(/img/featured-three.png);
+    background-position: center;
   }
   .portfolio .container .portfolio-projects .row-two {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .portfolio .container .portfolio-projects .row-two .featured-four {
+    background: url(/img/featured-four.png);
+    background-position: center;
+  }
+  .portfolio .container .portfolio-projects .row-two .featured-five {
+    background: url(/img/featured-five.png);
+    background-position: center;
+  }
+  .portfolio .container .portfolio-projects .row-two .featured-six {
+    background: url(/img/featured-six.png);
+    background-position: center;
+  }
   .portfolio .container .portfolio-projects .featured {
-    height: 50rem;
+    height: 32rem;
     width: 100%;
     background: inherit;
-    background: url(https://danielkorpai.com/dist/img/dribbble/landing-page-template.png);
     margin-right: 4rem;
     border-radius: 0.5rem;
     -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
@@ -1149,10 +1174,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    margin-bottom: 2rem;
     cursor: pointer;
   }
   .portfolio .container .portfolio-projects .featured .project-description {
-    height: 30vh;
+    height: 20vh;
     width: 100%;
     padding: 4rem;
     background: white;
@@ -1169,13 +1196,10 @@ li {
     margin-bottom: 1rem;
   }
   .portfolio .container .portfolio-projects .featured .project-description .project-info {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     width: 80%;
     text-align: center;
     margin-bottom: 2rem;
-  }
-  .portfolio .container .portfolio-projects .featured1 {
-    background: url(/bgslide/3.png);
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {

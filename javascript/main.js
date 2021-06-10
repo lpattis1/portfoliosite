@@ -45,6 +45,7 @@ const filterProjects = document.querySelectorAll(".project");
 const portfolioContainer = document.querySelector(".portfolio");
 const bgs = document.querySelectorAll(".bg");
 const descriptions = document.querySelectorAll(".project-description");
+const shrink = window.matchMedia("(max-width: 600px)");
 
 function sortProjects() {
   filterProjects.forEach((project) => {

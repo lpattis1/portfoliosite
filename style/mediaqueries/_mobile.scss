@@ -86,10 +86,11 @@
 
 // portfolio
 @media only screen and (max-width: 600px) {
+
   .portfolio {
-    margin-top: 8vh;
+    margin-top: 5vh;
     margin-bottom: 8vh;
-    height: 110vh;
+    height: 350vh;
     background-image: linear-gradient(
       to right bottom,
       rgba(242, 125, 82, 0.699),
@@ -110,7 +111,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
+        
         .portfolio-text-left {
           .text-destination {
             .divider {
@@ -142,6 +143,11 @@
             align-items: center;
             justify-content: center;
 
+            .filter-projects {
+              display: none;
+            }
+    
+
             .project {
               margin-right: 2rem;
               font-size: 1.4rem;
@@ -150,6 +156,7 @@
               text-align: center;
               text-transform: uppercase;
               cursor: pointer;
+              display: none;
             }
 
             .project:hover {
@@ -175,19 +182,48 @@
         .row-one {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
-          margin-bottom: 7rem;
+          margin-bottom: 3rem;
+
+          .featured-one {
+            background: url(/img/featured-one.png);
+            background-position: center;
+          }
+      
+          .featured-two {
+            background: url(/img/featured-two.png);
+            background-position: center;
+          }
+      
+          .featured-three {
+            background: url(/img/featured-three.png);
+            background-position: center;
+          }
         }
 
         .row-two {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
+
+          .featured-four {
+            background: url(/img/featured-four.png);
+            background-position: center;
+          }
+      
+          .featured-five {
+            background: url(/img/featured-five.png);
+            background-position: center;
+          }
+      
+          .featured-six {
+            background: url(/img/featured-six.png);
+            background-position: center;
+          }
         }
 
         .featured {
-          height: 50rem;
+          height: 32rem;
           width: 100%;
           background: inherit;
-          background: url(https://danielkorpai.com/dist/img/dribbble/landing-page-template.png);
           margin-right: 4rem;
           border-radius: 0.5rem;
           -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
@@ -195,10 +231,14 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          margin: auto;
+          margin-bottom: 2rem;
           cursor: pointer;
 
+          
+
           .project-description {
-            height: 30vh;
+            height: 20vh;
             width: 100%;
             padding: 4rem;
             background: white;
@@ -216,7 +256,7 @@
             }
 
             .project-info {
-              font-size: 1.5rem;
+              font-size: 1.1rem;
               width: 80%;
               text-align: center;
               margin-bottom: 2rem;
@@ -225,10 +265,6 @@
             .project-icons {
             }
           }
-        }
-
-        .featured1 {
-          background: url(/bgslide/3.png);
         }
       }
     }
