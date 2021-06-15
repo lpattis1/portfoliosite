@@ -2,7 +2,7 @@
 
 .header {
     margin-top: 10vh;
-    height: 47vh;
+    height: 57vh;
     z-index: 100;
     -webkit-animation: fade-in 3.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in 3.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -11,6 +11,7 @@
     &__container {
        @include containerFlex;
         margin: auto;
+        margin-top: 15vh;
     }
 
     .text {
