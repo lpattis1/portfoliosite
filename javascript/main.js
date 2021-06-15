@@ -32,9 +32,18 @@ function linksShowHoverState() {
   });
 }
 
+function jumpToLinkSections() {
+  navMenuLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      navMenu.classList.remove("nav-menu--show");
+    });
+  });
+}
+
 openHamburgerMenu();
 closeHamburgerMenu();
 linksShowHoverState();
+jumpToLinkSections();
 
 // -----------------------------------------------
 

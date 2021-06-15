@@ -1,3 +1,5 @@
+// Make navbar sticky on scroll
+
 function makeNavbarFixed() {
   const nav = document.querySelector(".navbar");
 
