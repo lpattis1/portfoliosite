@@ -585,6 +585,9 @@ li {
   animation: bounce-in-top 1.1s both;
   animation-delay: 2.5s;
 }
+.navbar__logo h3 a {
+  color: black;
+}
 .navbar .links {
   display: flex;
   align-items: center;

@@ -43,7 +43,9 @@
         <!-- logo -->
         <div class="navbar__logo">
           <img src="/img/3d-cube.svg" alt="" class="logo__img" />
-          <h3 class="logo__text">LP</h3>
+          <h3 class="logo__text">
+            <a href="#home">LP</a>
+          </h3>
         </div>
 
         <!-- links -->
@@ -90,7 +92,7 @@
                 <span class="hover-state"
                   ><i class="fas fa-long-arrow-alt-right"></i
                 ></span>
-                <a href="#portfolio" class="menu-link menu-link-mobile">Portfolio</a>
+                <a href="#portfolio" class="menu-link menu-link-mobile portfolio-link">Portfolio</a>
               </li>
             </ul>
             <div class="socials">
@@ -337,5 +339,9 @@
     <script src="/javascript/navbar.js"></script>
     <script src="/javascript/popup.js"></script>
     <script src="/javascript/loading.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]');
+    </script>
   </body>
 </html>

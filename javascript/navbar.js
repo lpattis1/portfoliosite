@@ -13,3 +13,7 @@ function makeNavbarFixed() {
 }
 
 makeNavbarFixed();
+
+// -----------------------------------
+
+// Smooth scroll to the portfolio section
